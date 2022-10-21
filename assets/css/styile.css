@@ -1,0 +1,26 @@
+body{
+   background-color: #083B4C;
+}
+
+.title{
+   font-size: 4rem;
+}
+
+.box{
+   height: 80px;
+   width: 80px;
+   margin: 10px 20px;
+   text-align: center; 
+}
+
+.normal{
+   background-color: #1389B2;
+}
+
+.fizz{
+   background-color: #0CD6A1;
+}
+
+.buzz{
+   background-color: #FFD166
+}
