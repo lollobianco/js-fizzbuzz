@@ -1,5 +1,8 @@
 body{
    background-color: #083B4C;
+   overflow: hidden;
+   height: 100vh;
+   padding: 48px;
 }
 
 .title{
@@ -9,8 +12,25 @@ body{
 .box{
    height: 80px;
    width: 80px;
+   border-radius: 5px;
    margin: 10px 20px;
    text-align: center; 
+}
+
+.boxcont{
+   width: 50%;
+   margin: 0 auto;
+}
+
+#boxesContainer{
+   overflow: scroll;
+   -ms-overflow-style: none;
+   scrollbar-width: none;
+   height: 70vh;
+}
+
+#boxesContainer::-webkit-scrollbar{
+   display: none;
 }
 
 .normal{
@@ -27,4 +47,50 @@ body{
 
 .fizzBuzz{
    background-color: #F0466F;
+}
+
+@media screen and (max-width: 820px) {
+   .boxcont{
+      width: 98%;
+      margin: 0 auto;
+   }
+
+   body{
+      padding: 48px 0;
+   }
+
+   .title{
+      font-size: 3.5rem;
+   }
+
+   .box{
+      height: 70px;
+      width: 70px;
+      border-radius: 5px;
+      margin: 15px 15px;
+      text-align: center; 
+   }
+}
+
+@media screen and (max-width: 425px) {
+   .boxcont{
+      width: 100%;
+      margin: 0 auto;
+   }
+
+   body{
+      padding: 48px 0;
+   }
+
+   .title{
+      font-size: 2rem;
+   }
+
+   .box{
+      height: 60px;
+      width: 60px;
+      border-radius: 5px;
+      margin: 15px 15px;
+      text-align: center; 
+   }
 }
